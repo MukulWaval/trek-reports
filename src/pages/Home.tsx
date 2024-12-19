@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
@@ -17,9 +18,9 @@ const Home: React.FC = () => {
             Explore detailed trek reports, stunning photos, and useful tips from
             my journeys across beautiful trails and mountains.
           </p>
-          <a href="/discover" className="btn btn-primary">
+          <Link to="/discover" className="btn btn-primary">
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </div>
