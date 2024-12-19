@@ -11,7 +11,7 @@ import About from "../pages/About";
 import BaildaraToFenyadeviGhat from "../pages/trek-reports/baildara-to-fenyadevi-ghat";
 
 const AppRoutes: React.FC = () => (
-  <Router>
+  <Router basename="/trek-reports">
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
