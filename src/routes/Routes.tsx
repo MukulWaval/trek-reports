@@ -14,13 +14,13 @@ const AppRoutes: React.FC = () => (
   <Router basename="/trek-reports">
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="./" element={<Home />} />
+        <Route path="./about" element={<About />} />
         <Route path="*" element={<NotFound />} />
 
         {/* Trek reports */}
         <Route
-          path="/report/baildara-to-fenyadevi-ghat"
+          path="./report/baildara-to-fenyadevi-ghat"
           element={<BaildaraToFenyadeviGhat />}
         />
       </Routes>
