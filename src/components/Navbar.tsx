@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -48,24 +47,24 @@ const Navbar: React.FC = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to="/discover">Discover</Link>
+              <a href="/discover">Discover</a>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">
+        <a href="/" className="btn btn-ghost text-xl">
           Trek.Reports
-        </Link>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/discover">Discover</Link>
+            <a href="/discover">Discover</a>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="/about">About</a>
           </li>
         </ul>
       </div>

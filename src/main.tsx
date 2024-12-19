@@ -6,7 +6,7 @@ import { HashRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename="/trek-reports">
       <App />
     </HashRouter>
   </React.StrictMode>
