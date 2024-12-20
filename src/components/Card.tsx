@@ -1,13 +1,13 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface CardProps {
   imgSrc: string;
   alt: string;
   title: string;
-  body: React.ReactNode;
+  children: ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ imgSrc, alt, title, body }) => {
+const Card: React.FC<CardProps> = ({ imgSrc, alt, title, children }) => {
   return (
     <div className="card w-full bg-base-100 shadow-2xl mb-10">
       <figure>
@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, alt, title, body }) => {
       <h1 className="text-2xl font-bold mt-5 mb-2 px-3 lg:text-5xl lg:px-10 lg:mb-10">
         {title}
       </h1>
-      <div className="card-body m-0">{body}</div>
+      <div className="card-body m-0">{children}</div>
     </div>
   );
 };
