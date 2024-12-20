@@ -6,9 +6,13 @@
 | ---------------- | ------------------ | ----------------------------------- | ------------ |
 | 15 December 2024 | 6 Hours 18 Minutes | Savale, Maval Taluka, Pune - 410401 | GGIM Udaan   |
 
+---
+
 ## Objective
 
 The primary objective of the trek was to navigate the rugged terrain of the Sahyadri Hills, honing essential trekking skills such as navigation, teamwork, and terrain management, while observing the unique biodiversity of the Western Ghats.
+
+---
 
 ## Team Details
 
@@ -17,6 +21,8 @@ The primary objective of the trek was to navigate the rugged terrain of the Sahy
 | 9            | Vivek Shivade <span class="badge">GGIM Udaan Instructor</span> | Anushka Deo <span class="badge">GGIM Udaan Instructor</span> |
 
 The trek followed a participant-centered approach, with the team managing route planning, gear handling, and decision-making under the guidance of the instructors.
+
+---
 
 ## Gear Checklist
 
@@ -40,11 +46,15 @@ The trek followed a participant-centered approach, with the team managing route 
 - Walkie-talkies
 - Dynamic rope
 
+---
+
 ## Route Overview
 
 | Starting Point                                 | Ending Point                              | Distance Covered | Elevation Range  | Notable Landmarks                   |
 | ---------------------------------------------- | ----------------------------------------- | ---------------- | ---------------- | ----------------------------------- |
 | Vitthalvadi Village (18.95705° N, 73.48300° E) | Fenyadevi Ghat (18.95705° N, 73.48300° E) | 9.5 km           | ~700 m to ~450 m | Kalakrai Village and Baildara Trail |
+
+---
 
 ## Route Description
 
@@ -52,11 +62,15 @@ The trek began in Vitthalvadi Village, where we were greeted by the sight of Kot
 
 From Kalakrai, the route transitioned to the Fenyadevi Ghat Trail, featuring steep ascents, dramatic rock formations, and ancient stone relics. The final stretch involved navigating narrow footpaths back to Vitthalvadi Village, concluding the trek.
 
+---
+
 ## Photos
 
 ![Kothaligad and its base village Peth](https://i.postimg.cc/3xgTfXQn/2.jpg)
 ![A house in Kalakrai village](https://i.postimg.cc/Bv4Grjqs/5.jpg)
 ![View from Vitthalvadi](https://i.postimg.cc/pr4H4kd1/1.jpg)
+
+---
 
 ## Trail Guide
 
@@ -80,6 +94,8 @@ From Kalakrai, the route transitioned to the Fenyadevi Ghat Trail, featuring ste
 4. Look for another holy relic carved in stone along the way.
 5. Climb 200m to reach the flatland at the top of the ghat.
 6. From the flatland, follow the footpath to return to Vitthalvadi village.
+
+---
 
 ## Terrain and Biodiversity
 
