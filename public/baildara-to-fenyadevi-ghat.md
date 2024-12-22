@@ -1,3 +1,5 @@
+![View from Vitthalvadi](https://i.postimg.cc/pr4H4kd1/1.jpg)
+
 # Baildara to Fenyadevi Ghat Trek Report
 
 ## Basic Info.
@@ -16,9 +18,9 @@ The primary objective of the trek was to navigate the rugged terrain of the Sahy
 
 ## Team Details
 
-| Participants | Trek Leader                                                    | Instructors                                                  |
-| ------------ | -------------------------------------------------------------- | ------------------------------------------------------------ |
-| 9            | Vivek Shivade <span class="badge">GGIM Udaan Instructor</span> | Anushka Deo <span class="badge">GGIM Udaan Instructor</span> |
+| Participants | Trek Leader                           | Instructors                         |
+| ------------ | ------------------------------------- | ----------------------------------- |
+| 9            | Vivek Shivade - GGIM Udaan Instructor | Anushka Deo - GGIM Udaan Instructor |
 
 The trek followed a participant-centered approach, with the team managing route planning, gear handling, and decision-making under the guidance of the instructors.
 
@@ -107,9 +109,11 @@ From Kalakrai, the route transitioned to the Fenyadevi Ghat Trail, featuring ste
 
 ### Biodiversity Highlights
 
-- **Tree Canopy:** Dominated by Ain (<i>Terminalia elliptica</i>) and Hirda (<i>Terminalia chebula</i>).
-- **Shrubs:** Dense growth of karvi (<i>Strobilanthes callosus</i>), a unique species known for its 7-year blooming cycle.
+- **Tree Canopy:** Dominated by Ain (_Terminalia elliptica_) and Hirda (_Terminalia chebula_).
+- **Shrubs:** Dense growth of karvi (_Strobilanthes callosus_), a unique species known for its 7-year blooming cycle.
 - **Ground Cover:** Seasonal grasses and ferns thriving in the post-monsoon landscape.
+
+---
 
 ## Activities and Learning
 
@@ -125,12 +129,16 @@ The trek included a session on dynamic rope coiling, focusing on proper storage 
 
 Participants were encouraged to lead sections of the trail, fostering self-reliance and decision-making in real-time scenarios.
 
+---
+
 ## Challenges Faced
 
 - **Navigation Errors:** A missed junction delayed progress.
 - **Loose Terrain:** Steep descents with loose gravel required caution.
 - **Gear Mismanagement:** A participant lost their phone on a technical section.
 - **Dehydration:** Mild dehydration among participants despite winter conditions.
+
+---
 
 ## Reflections and Recommendations
 
@@ -145,6 +153,8 @@ Participants were encouraged to lead sections of the trail, fostering self-relia
 - Gear Packing: Secure valuables during technical sections.
 - Hydration Strategies: Use ORS or electrolytes on longer treks.
 - Equipment Use: Promote walking poles for steep gradients.
+
+---
 
 ## Conclusion
 
