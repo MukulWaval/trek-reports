@@ -24,7 +24,7 @@ interface ParserProps {
 const Parser: React.FC<ParserProps> = ({ section }) => {
   const parseInlineContent = (node: Node): ReactNode => {
     if (node.nodeType === Node.TEXT_NODE) {
-      return node.textContent?.trim() || "";
+      return node.textContent || "";
     }
 
     if (node.nodeType === Node.ELEMENT_NODE) {
