@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
 interface TitleProps {
-  title: ReactNode;
+  children: ReactNode;
 }
 
-const Title: React.FC<TitleProps> = ({ title }) => {
-  return <h2 className="card-title font-semibold">{title}</h2>;
+const Title: React.FC<TitleProps> = ({ children }) => {
+  return <h2 className="card-title font-semibold">{children}</h2>;
 };
 
 export default Title;

@@ -37,25 +37,15 @@ import Layout from "../components/Layout";
 import NotFound from "../components/NotFound";
 import Home from "../pages/Home";
 import About from "../pages/About";
-
-// Trek Reports
-import BaildaraToFenyadeviGhat from "../pages/trek-reports/baildara-to-fenyadevi-ghat";
+import Report from "../components/Report";
 
 const AppRoutes: React.FC = () => (
   <Router>
     <Layout>
       <Routes>
-        {/* General Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-
-        {/* Trek Reports */}
-        <Route
-          path="/report/baildara-to-fenyadevi-ghat"
-          element={<BaildaraToFenyadeviGhat />}
-        />
-
-        {/* Catch-All: 404 Not Found */}
+        <Route path="/report/:id" element={<Report />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>

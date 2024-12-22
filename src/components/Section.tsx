@@ -1,29 +1,27 @@
 import React, { ReactNode } from "react";
 import Divider from "./Divider";
+import Title from "./Title";
 
 interface SectionProps {
-  defaultChecked: boolean;
-  title: ReactNode;
-  content: ReactNode;
+  title: string;
+  children: ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({
-  defaultChecked,
-  title,
-  content
-}) => {
+const Section: React.FC<SectionProps> = ({ title, children }) => {
   return (
     <>
       <div className="hidden lg:block">
         <div className="collapse collapse-plus join-item border-base-300 border w-full">
-          <input type="radio" defaultChecked={defaultChecked} />
-          <div className="collapse-title">{title}</div>
-          <div className="collapse-content">{content}</div>
+          <input type="radio" defaultChecked />
+          <div className="collapse-title">
+            <Title>{title}</Title>
+          </div>
+          <div className="collapse-content">{children}</div>
         </div>
       </div>
       <div className="block lg:hidden">
-        {title}
-        {content}
+        <Title>{title}</Title>
+        {children}
         <Divider />
       </div>
     </>
