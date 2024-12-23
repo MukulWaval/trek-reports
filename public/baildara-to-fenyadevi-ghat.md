@@ -1,9 +1,11 @@
+![View from Vitthalvadi](https://i.postimg.cc/pr4H4kd1/1.jpg)
+
 # Baildara to Fenyadevi Ghat Trek Report
 
 ## Basic Info.
 
 | Date             | Trek Duration      | Start and End Location              | Organised By |
-| ----------------- | ------------------ | ----------------------------------- | ------------ |
+| ---------------- | ------------------ | ----------------------------------- | ------------ |
 | 15 December 2024 | 6 Hours 18 Minutes | Savale, Maval Taluka, Pune - 410401 | GGIM Udaan   |
 
 ---
@@ -51,8 +53,8 @@ From Kalakrai, the route transitioned to the Fenyadevi Ghat Trail, featuring ste
 1. Follow the Baildara trail, which is narrow and overgrown with karvi.
 2. Descend from 700m to 450m to reach a four-way junction.
 3. Turn left (westward) to continue towards Kalakrai village.  
-   *(Do not take the straight-down path to a small village in Raigad district.)*  
-   *(Turn right to visit an old well.)*
+   _(Do not take the straight-down path to a small village in Raigad district.)_  
+   _(Turn right to visit an old well.)_
 
 ### Kalakrai to Vitthalvadi via Fenyadevi Ghat
 
@@ -158,6 +160,7 @@ Participants were encouraged to lead sections of the trail, fostering self-relia
 ---
 
 ## Photos
+
 ![Screenshot-2024-12-23-11-28-58-87-6012fa4d4ddec268fc5c7112cbb265e7.jpg](https://i.postimg.cc/Bv0Yz7m1/Screenshot-2024-12-23-11-28-58-87-6012fa4d4ddec268fc5c7112cbb265e7.jpg)
 ![](https://i.postimg.cc/c1pbYJfm/IMG-20241216-WA0011.jpg)
 ![](https://i.postimg.cc/nzs398zg/Screenshot-2024-12-23-11-27-47-45-6012fa4d4ddec268fc5c7112cbb265e7.jpg)
