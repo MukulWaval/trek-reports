@@ -5,7 +5,7 @@ const GlobalListener: React.FC = () => {
     // Prevent copy action
     const handleCopy = (event: ClipboardEvent) => {
       event.preventDefault();
-      navigator.clipboard.writeText("copying is not allowed.");
+      navigator.clipboard.writeText("");
     };
 
     // Prevent right-click
