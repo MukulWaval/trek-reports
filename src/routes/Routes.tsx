@@ -8,6 +8,7 @@ import Report from "../components/Report";
 
 // Import DynamicViewport component
 import DynamicViewport from "../components/DynamicViewport";
+import Discover from "../pages/Discover";
 
 const AppRoutes: React.FC = () => (
   <Router>
@@ -18,6 +19,7 @@ const AppRoutes: React.FC = () => (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/discover" element={<Discover />} />
         <Route path="/report/:id" element={<Report />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
