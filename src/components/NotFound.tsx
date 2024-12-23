@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFound: React.FC = () => {
   return (
@@ -15,9 +16,9 @@ const NotFound: React.FC = () => {
             Sorry, we can't find that page. You'll find lots to explore on the
             home page.{" "}
           </p>
-          <a href="/" className="btn btn-primary">
+          <Link to="/" className="btn btn-primary">
             Back to Homepage
-          </a>
+          </Link>
         </div>
       </div>
     </section>
