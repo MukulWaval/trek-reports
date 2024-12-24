@@ -15,20 +15,22 @@ const Card: React.FC<CardProps> = ({ imgSrc, alt, title, children }) => {
       behavior: "smooth",
       block: "center"
     });
-  });
+  }, []);
 
   return (
-    <div className="card w-full bg-base-100 shadow-2xl mb-10">
-      <figure>
-        <img src={imgSrc} alt={alt} className="h-full w-full object-cover" />
-      </figure>
-      <h1
-        ref={titleRef}
-        className="text-2xl font-bold mt-5 mb-2 px-3 lg:text-5xl lg:px-10 lg:mb-10"
-      >
-        {title}
-      </h1>
-      <div className="card-body m-0">{children}</div>
+    <div className="grid grid-cols-1 p-0">
+      <div className="card bg-base-100 shadow-2xl">
+        <figure>
+          <img src={imgSrc} alt={alt} className="h-full w-full object-cover" />
+        </figure>
+        <h1
+          ref={titleRef}
+          className="text-2xl font-bold mt-5 mb-2 px-3 lg:text-5xl lg:px-10 lg:mb-10"
+        >
+          {title}
+        </h1>
+        <div className="card-body m-0">{children}</div>
+      </div>
     </div>
   );
 };

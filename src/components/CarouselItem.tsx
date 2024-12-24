@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 
 interface ImageProps {
   src: string;
@@ -6,25 +6,11 @@ interface ImageProps {
 }
 
 const CarouselItem: React.FC<ImageProps> = ({ src, alt }) => {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-  const dialogRef = useRef<HTMLDialogElement>(null); // Ref for the modal
-  const imageRef = useRef<HTMLImageElement>(null); // Ref for the image
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkMobile);
-    };
-  }, []);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
 
   const showModal = () => {
-    if (!isMobile && dialogRef.current) {
+    if (dialogRef.current) {
       dialogRef.current.showModal(); // Open the modal
     }
 
@@ -60,12 +46,7 @@ const CarouselItem: React.FC<ImageProps> = ({ src, alt }) => {
       </div>
 
       {/* Modal */}
-      <dialog
-        ref={dialogRef}
-        id={src}
-        className="modal"
-        onClose={closeModal} // Ensure scroll happens when modal closes
-      >
+      <dialog ref={dialogRef} id={src} className="modal" onClose={closeModal}>
         <div className="modal-box">
           <img src={src} alt={alt} className="w-full h-auto rounded-lg" />
         </div>

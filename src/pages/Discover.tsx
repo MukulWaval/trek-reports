@@ -32,10 +32,10 @@ const Discover: React.FC = () => {
           Discover
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-3 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-3 items-start">
         {markdownFiles.length > 0 ? (
           markdownFiles.map((fileName) => (
-            <div className="card bg-base-100 shadow-xl">
+            <div key={fileName} className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <Link
                   to={`/report/${fileName.replace(".md", "")}`}

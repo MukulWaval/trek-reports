@@ -5,16 +5,10 @@ import NotFound from "../components/NotFound";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Report from "../components/Report";
-
-// Import DynamicViewport component
-import DynamicViewport from "../components/DynamicViewport";
 import Discover from "../pages/Discover";
 
 const AppRoutes: React.FC = () => (
   <Router>
-    {/* Place DynamicViewport inside the Router to update viewport on route change */}
-    <DynamicViewport />
-
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />

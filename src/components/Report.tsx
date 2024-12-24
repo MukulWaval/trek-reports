@@ -18,7 +18,6 @@ const Report: React.FC = () => {
   const [imgSrc, setImgSrc] = useState<string>("");
   const [alt, setAlt] = useState<string>("");
   const [sections, setSections] = useState<SectionData[]>();
-  const parser = new DOMParser();
 
   // Fetch markdown content when `id` changes
   useEffect(() => {
@@ -53,6 +52,7 @@ const Report: React.FC = () => {
 
   useEffect(() => {
     const getTitleAndImage = () => {
+      const parser = new DOMParser();
       if (!titleHtmlContent) return;
 
       const doc = parser.parseFromString(titleHtmlContent, "text/html");
@@ -72,7 +72,7 @@ const Report: React.FC = () => {
 
       // Find and remove the first <p> that only contains an <img> tag
       const pTags = doc.getElementsByTagName("p");
-      for (let p of pTags) {
+      for (const p of pTags) {
         if (
           p.children.length === 1 &&
           p.getElementsByTagName("img").length === 1
@@ -91,6 +91,7 @@ const Report: React.FC = () => {
   useEffect(() => {
     const createSections = () => {
       if (!sectionHtmlContent) return;
+      const parser = new DOMParser();
 
       const sectionArray: SectionData[] = [];
       const parts = sectionHtmlContent.split("<hr>");
@@ -120,13 +121,11 @@ const Report: React.FC = () => {
   }, [sectionHtmlContent]);
 
   return (
-    <div className="w-full h-full flex flex-col items-center px-0 lg:px-10">
-      <Card imgSrc={imgSrc} alt={alt} title={title}>
-        {sections?.map((section, index) => (
-          <Parser key={index} section={section} />
-        ))}
-      </Card>
-    </div>
+    <Card imgSrc={imgSrc} alt={alt} title={title}>
+      {sections?.map((section, index) => (
+        <Parser key={index} section={section} />
+      ))}
+    </Card>
   );
 };
 

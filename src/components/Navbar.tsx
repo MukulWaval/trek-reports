@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     const initialTheme = savedTheme === dark_theme ? dark_theme : light_theme;
     setIsDarkMode(initialTheme === dark_theme);
     document.documentElement.setAttribute("data-theme", initialTheme);
-  }, []);
+  }, [light_theme, dark_theme]);
 
   // Toggle theme and save to localStorage
   const toggleTheme = () => {
