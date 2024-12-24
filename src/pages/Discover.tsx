@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+interface FileData {
+  title: string;
+  description: string;
+  imgSrc: string;
+}
+
 const Discover: React.FC = () => {
-  const [markdownFiles, setMarkdownFiles] = useState<string[]>([]);
+  const [fileData, setfileData] = useState<FileData[]>([]);
 
   useEffect(() => {
     const fetchMarkdownFiles = async () => {
@@ -10,10 +16,8 @@ const Discover: React.FC = () => {
         const base = import.meta.env.BASE_URL;
         const response = await fetch(`${base}/files.json`); // Fetch the JSON file listing markdown files
         if (response.ok) {
-          const files = await response.json();
-          setMarkdownFiles(
-            files.filter((file: string) => file.endsWith(".md"))
-          );
+          const data = await response.json();
+          setfileData(data);
         } else {
           console.error("Failed to fetch files.json", response.statusText);
         }
@@ -33,18 +37,31 @@ const Discover: React.FC = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-3 items-start">
-        {markdownFiles.length > 0 ? (
-          markdownFiles.map((fileName) => (
-            <div key={fileName} className="card bg-base-100 shadow-xl">
+        {fileData.length > 0 ? (
+          fileData.map((file) => (
+            <div key={file.title} className="card bg-base-100 shadow-xl">
+              <figure className="relative pb-[56.25%]">
+                <img
+                  src={file.imgSrc}
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                />
+              </figure>
               <div className="card-body">
-                <Link
-                  to={`/report/${fileName.replace(".md", "")}`}
-                  className="card-title"
-                >
-                  {fileName
+                <h3 className="card-title">
+                  {file.title
                     .replace(/-(.)/g, (_, char) => " " + char.toUpperCase())
-                    .replace(/^./, (char) => char.toUpperCase())
-                    .replace(".md", "")}
+                    .replace(/^./, (char) => char.toUpperCase())}
+                </h3>
+                <div className="min-h-[4em] max-h-[4em]">
+                  {file.description.length > 150
+                    ? `${file.description.substring(0, 147)}...`
+                    : file.description}
+                </div>
+                <Link
+                  to={`/report/${file.title}`}
+                  className="text-right link-primary"
+                >
+                  Learn more
                 </Link>
               </div>
             </div>

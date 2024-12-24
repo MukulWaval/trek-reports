@@ -11,10 +11,18 @@ const Card: React.FC<CardProps> = ({ imgSrc, alt, title, children }) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    titleRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "center"
-    });
+    // Wait until the DOM is fully loaded and rendered
+    const timeoutId = setTimeout(() => {
+      // Ensure the title element exists and then scroll into view
+      if (titleRef.current) {
+        titleRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }
+    }, 100); // Delay to make sure the element is rendered
+
+    return () => clearTimeout(timeoutId); // Cleanup timeout
   }, []);
 
   return (
