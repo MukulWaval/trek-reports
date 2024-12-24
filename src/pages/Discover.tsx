@@ -60,7 +60,7 @@ const Discover: React.FC = () => {
                   </div>
                   <Link
                     to={`/report/${file.title}`}
-                    className="text-right link-primary"
+                    className="text-right mt-10 lg:mt-5 md:mt-6 link-primary"
                   >
                     Learn more
                   </Link>
