@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useRef } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 
 interface CardProps {
   imgSrc: string;
@@ -9,6 +9,61 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imgSrc, alt, title, children }) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const [isTitleVisible, setIsTitleVisible] = useState(false);
+  const observer = useRef<IntersectionObserver | null>(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver(
+      ([entry]) => {
+        setIsTitleVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (titleRef.current) {
+      observer.current.observe(titleRef.current);
+    }
+
+    return () => {
+      if (observer.current) {
+        observer.current.disconnect();
+      }
+    };
+  }, []);
+
+  const scrollToTitle = () => {
+    titleRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
+  const [showButton, setShowButton] = useState(false);
+  const [shouldShowDownArrow, setShouldShowDownArrow] = useState(false);
+  useEffect(() => {
+    if (titleRef.current) {
+      const titleRect = titleRef.current.getBoundingClientRect();
+      const isBelow = titleRect.top > window.innerHeight;
+      setShouldShowDownArrow(!isTitleVisible && isBelow);
+    }
+  }, [isTitleVisible]);
+
+  const ScrollButtonContent = showButton
+    ? "arrow_upward"
+    : shouldShowDownArrow
+    ? "arrow_downward"
+    : "";
+  useEffect(() => {
+    setShowButton(!isTitleVisible);
+  }, [isTitleVisible]);
+
+  const ScrollButton = () => (
+    <button
+      onClick={scrollToTitle}
+      className={`z-50 fixed bottom-4 right-4 btn btn-primary btn-circle shadow-2xl ${
+        showButton ? "block" : "hidden"
+      }`}
+    >
+      <span className="material-symbols-outlined">{ScrollButtonContent}</span>
+    </button>
+  );
 
   useEffect(() => {
     // Wait until the DOM is fully loaded and rendered
@@ -37,6 +92,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, alt, title, children }) => {
         >
           {title}
         </h1>
+        <ScrollButton />
         <div className="card-body m-0">{children}</div>
       </div>
     </div>
