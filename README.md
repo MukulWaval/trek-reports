@@ -1,5 +1,7 @@
 # 🔬 Trek.Reports
 
+$a$
+
 A web application to dynamically render and parse Markdown content, providing a structured report display with support for sections, images, links, tables, and other elements. This project uses React and Markdown for content rendering, along with custom components for improved interactivity.
 
 ## 🌍 Features
